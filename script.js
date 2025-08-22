@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Données des utilisateurs
     const usersData = {
-        ARYAN: { name: "ARYAN BOHTEY", role: "Développeur Full-Stack" },
+        ARYAN: { name: "ARYAN BHOTEY", role: "Développeur Full-Stack" },
         SELIM: { name: "SELIM AISSA", role: "Développeur Full-Stack" }
     };
 
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Gestion des contrôles de fenêtre
     const mainWindow = document.querySelector('.main-window');
+    const mainTaskbar = document.querySelector('taskbar');
     const maximizeBtn = document.querySelector('.maximize-btn');
     let isMaximized = false; // état du plein écran
 
@@ -58,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
             mainWindow.style.left = '0';
             mainWindow.style.transform = 'none';
             isMaximized = true;
+            if (isMaximized == true) {
+                mainTaskbar.style.visibility = 'hidden';
+            }
         } else {
             // Revenir à la taille normale
             mainWindow.style.width = '800px';
@@ -65,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mainWindow.style.top = '50%';
             mainWindow.style.left = '50%';
             mainWindow.style.transform = 'translate(-50%, -50%)';
+            mainWindow.style
             isMaximized = false;
         }
     });
