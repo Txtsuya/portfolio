@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Txtsuya/portfolio/issues"
   },
-  "homepage": "https://github.com/Txtsuya/portfolio#readme"
+  "homepage": "https://github.com/Txtsuya/portfolio#readme",
+  "dependencies": {
+    "react": "^19.1.1"
+  }
 }
