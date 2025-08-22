@@ -1,0 +1,22 @@
+{
+  "name": "snaketatsuya",
+  "version": "1.0.0",
+  "description": "portfolio interactif en commun ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Txtsuya/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "snake x tatsuya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Txtsuya/portfolio/issues"
+  },
+  "homepage": "https://github.com/Txtsuya/portfolio#readme"
+}
