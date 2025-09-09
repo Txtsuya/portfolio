@@ -3,125 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Choisir un Utilisateur</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio OS - Desktop Interface</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Desktop Environment -->
-    <div class="desktop">
-        <!-- Barre des taches up -->
-        <div class="taskbar">
-            <div class="taskbar-left">
-                <button class="start-menu-btn">About</button>
-            </div>
-            <div class="taskbar-right">
-                <div class="system-tray">
-                    <span class="lang-indicator">fr</span>
-                    <span class="time">Ven 22 Aoû 15:43</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Icones de bureau -->
-        <div class="desktop-icons">
-            <div class="desktop-icon">
-                <div class="icon applications-icon"></div>
-                <span>Applications</span>
-            </div>
-            <div class="desktop-icon">
-                <div class="icon doom-icon"></div>
-                <span>Doom</span>
-            </div>
-            <div class="desktop-icon">
-                <div class="icon algorithms-icon"></div>
-                <span>Corbeille</span>
-            </div>
-            <div class="desktop-icon">
-                <div class="icon readme-icon"></div>
-                <span>readme.txt</span>
-            </div>
-        </div>
-
-        <!-- Fenetre principale -->
-        <div class="window main-window">
-            <div class="window-header">
-                <span class="window-title">Portfolio Hub - Sélection d'Utilisateur</span>
-                <div class="window-controls">
-                    <button class="window-btn minimize-btn">_</button>
-                    <button class="window-btn maximize-btn">□</button>
-                    <button class="window-btn close-btn">×</button>
-                </div>
-            </div>
+    <div id="userSelection" class="user-selection">
+        <div class="selection-container">
+            <h1 class="main-title">Portfolio</h1>
+            <p class="subtitle">Select a user</p>
             
-            <div class="window-content">
-                <div class="content-header">
-                    <h1>CHOISIR UN UTILISATEUR</h1>
-                    <p>Sélectionnez un utilisateur pour explorer son travail</p>
+            <div class="users-grid">
+                <div class="user-card" data-user="developer">
+                    <div class="user-avatar">👨‍💻</div>
+                    <h3 class="user-name">Alex Developer</h3>
+                    <div class="user-line"></div>
                 </div>
-
-                <div class="user-selection">
-                    <div class="user-option" data-user="ARYAN">
-                        <div class="user-window">
-                            <div class="mini-window-header">
-                                <span>USER 1</span>
-                                <div class="mini-controls">
-                                    <span class="mini-btn">×</span>
-                                </div>
-                            </div>
-                            <div class="mini-window-content">
-                                <div class="user-info">
-                                    <div class="user-icon dev-icon"></div>
-                                    <h3>ARYAN BOHTEY</h3>
-                                    <p>DÉVELOPPEUR FULL-STACK</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="retro-button">Connexion</button>
-                    </div>
-
-                    <div class="user-option" data-user="SELIM">
-                        <div class="user-window">
-                            <div class="mini-window-header">
-                                <span>USER 2</span>
-                                <div class="mini-controls">
-                                    <span class="mini-btn">×</span>
-                                </div>
-                            </div>
-                            <div class="mini-window-content">
-                                <div class="user-info">
-                                    <div class="user-icon design-icon"></div>
-                                    <h3>SELIM AISSA</h3>
-                                    <p>DÉVELOPPEUR FULL-STACK</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="retro-button">Connexion</button>
-                    </div>
-                </div>
-
-                <!-- Navigation Menu - MAINTENANT EN DEHORS de user-selection -->
-                <div class="navigation-menu">
-                    <button class="nav-btn">A propos</button>
-                    <button class="nav-btn">Projet</button>
-                    <button class="nav-btn">Contact</button>
+                
+                <div class="user-card" data-user="designer">
+                    <div class="user-avatar">🎨</div>
+                    <h3 class="user-name">Aryan BHOTEY</h3>
+                    <div class="user-line"></div>
                 </div>
             </div>
-        </div>
-
-        <!-- Barre des taches down -->
-        <div class="bottom-dock">
-            <div class="dock-icon finder-icon"></div>
-            <div class="dock-icon user-icon"></div>
-            <div class="dock-icon mail-icon"></div>
-            <div class="dock-icon calculator-icon"></div>
-            <div class="dock-icon graph-icon"></div>
-            <div class="dock-icon terminal-icon"></div>
-            <div class="dock-icon folder-icon"></div>
-            <div class="dock-icon folder2-icon"></div>
-            <div class="dock-icon recycle-icon"></div>
         </div>
     </div>
-  <script src="script.js"></script>
-</body>
-</html>
